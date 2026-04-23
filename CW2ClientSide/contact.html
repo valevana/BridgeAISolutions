@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bridge AI Solutions | Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-row">
+        <a href="index.html" class="brand-logo-link" aria-label="Bridge AI Solutions home">
+          <img src="images/bridge-logo.png" alt="Bridge AI Solutions logo" class="brand-logo" />
+        </a>
+
+        <div class="brand-title-wrap">
+          <img src="images/brand-title.png" alt="Bridge AI Solutions" class="brand-title-image" />
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="hero-label">Get in touch</p>
+        <h1>Contact Us</h1>
+        <p class="hero-text">
+          Get in touch with Bridge AI Solutions to discuss AI services,
+          cybersecurity support, or technical training for your business.
+        </p>
+      </div>
+    </section>
+
+    <section class="section contact-section reveal">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div class="contact-card reveal">
+            <h2>Send Us a Message</h2>
+            <p class="contact-intro">
+              Complete the form below and a member of our team will respond as soon as possible.
+            </p>
+
+            <fieldset class="topic-fieldset">
+              <legend>Select an enquiry topic</legend>
+              <div class="contact-tags" aria-label="Popular enquiry topics">
+                <button type="button" class="contact-tag" data-topic="AI Solutions">AI Solutions</button>
+                <button type="button" class="contact-tag" data-topic="Cybersecurity">Cybersecurity</button>
+                <button type="button" class="contact-tag" data-topic="Training">Training</button>
+                <button type="button" class="contact-tag" data-topic="General Enquiry">General Enquiry</button>
+              </div>
+            </fieldset>
+
+            <input type="hidden" id="selectedTopic" name="selectedTopic" />
+            <p class="selected-topic-text" id="selectedTopicText" aria-live="polite">
+              No topic selected yet.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="John Smith"
+                  aria-describedby="fullNameError"
+                />
+                <small class="error-message" id="fullNameError" aria-live="polite"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  aria-describedby="emailError"
+                />
+                <small class="error-message" id="emailError" aria-live="polite"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="07700 900000"
+                  aria-describedby="phoneError"
+                />
+                <small class="error-message" id="phoneError" aria-live="polite"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="issue">Issue / Request</label>
+                <textarea
+                  id="issue"
+                  name="issue"
+                  rows="6"
+                  placeholder="Describe what you need..."
+                  aria-describedby="issueError"
+                ></textarea>
+                <small class="error-message" id="issueError" aria-live="polite"></small>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+              <p id="successMessage" class="success-message" aria-live="polite"></p>
+
+              <div id="submissionSummary" class="submission-summary" hidden>
+                <h3>Your Enquiry Summary</h3>
+                <p><strong>Name:</strong> <span id="summaryName"></span></p>
+                <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="summaryPhone"></span></p>
+                <p><strong>Topic:</strong> <span id="summaryTopic"></span></p>
+                <p><strong>Request:</strong> <span id="summaryIssue"></span></p>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-info-panel reveal">
+            <div class="info-card icon-card">
+              <div class="info-icon-circle">
+                <img src="images/email-icon.png" alt="Email icon" class="info-icon-img" />
+              </div>
+              <h3>Contact Information</h3>
+              <ul class="info-list">
+                <li><strong>Email:</strong> contact@bridgesolutions.com</li>
+                <li><strong>Phone:</strong> +44 28 9592 8950</li>
+                <li><strong>Hours:</strong> Monday–Friday, 09:00–17:00</li>
+              </ul>
+            </div>
+
+            <div class="info-card icon-card">
+              <div class="info-icon-circle">
+                <img src="images/help-icon.png" alt="Support icon" class="info-icon-img" />
+              </div>
+              <h3>What Can We Help With?</h3>
+              <ul class="help-list">
+                <li>Custom AI solutions</li>
+                <li>Cybersecurity support</li>
+                <li>Technical training</li>
+                <li>General business enquiries</li>
+              </ul>
+            </div>
+
+            <div class="info-card icon-card response-card">
+              <div class="info-icon-circle">
+                <img src="images/clock-icon.png" alt="Clock icon" class="info-icon-img" />
+              </div>
+              <h3>Response Time</h3>
+              <p>
+                We aim to respond to enquiries within 1–2 working days.
+              </p>
+              <p class="response-note">
+                No-obligation enquiries are welcome.
+              </p>
+            </div>
+
+            <div class="info-card icon-card">
+              <div class="info-icon-circle">
+                <img src="images/next-icon.png" alt="Next steps icon" class="info-icon-img" />
+              </div>
+              <h3>What Happens Next?</h3>
+              <p>
+                Once you send your enquiry, we review your message and respond within 1–2 working days with the most suitable next steps.
+              </p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section reveal">
+      <div class="container cta-box">
+        <h2>Ready to modernise your business?</h2>
+        <p>
+          Tell us what your business needs, and we will point you in the right direction.
+        </p>
+        <a href="service.html" class="btn-primary">View Services</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        <p>&copy; 2026 Bridge AI Solutions. All rights reserved.</p>
+        <p class="footer-note">This website was created for educational purposes as part of a university assignment.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="images/linkedin-icon.png" alt="LinkedIn" />
+        </a>
+
+        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="images/facebook-icon.png" alt="Facebook" />
+        </a>
+
+        <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Gmail">
+          <img src="images/gmail-icon.png" alt="Gmail" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
